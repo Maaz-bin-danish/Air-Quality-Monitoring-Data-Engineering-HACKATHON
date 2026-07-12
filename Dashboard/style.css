@@ -1,0 +1,50 @@
+/* Hide Streamlit menu only */
+#MainMenu {visibility:hidden;}
+header {visibility:hidden;}
+footer {visibility:hidden;}
+
+/* App Background */
+.stApp{
+    background-color:#0F172A;
+}
+
+/* Main Area */
+.block-container{
+    padding-top:1rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    max-width:100%;
+}
+
+/* Headings */
+h1,h2,h3{
+    color:white !important;
+}
+
+p,label{
+    color:white !important;
+}
+
+/* KPI Cards */
+div[data-testid="metric-container"]{
+    background:#1E293B;
+    border:1px solid #334155;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.35);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"]{
+    background:#111827;
+}
+
+/* Dataframe */
+[data-testid="stDataFrame"]{
+    border-radius:12px;
+}
+
+/* Plotly Charts */
+.js-plotly-plot{
+    border-radius:18px;
+}
