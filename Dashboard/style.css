@@ -48,3 +48,48 @@ section[data-testid="stSidebar"]{
 .js-plotly-plot{
     border-radius:18px;
 }
+
+/* ================= KPI CARDS ================= */
+
+div[data-testid="metric-container"]{
+    background: linear-gradient(145deg,#1E293B,#0F172A);
+    border:1px solid #334155;
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+    transition:0.3s;
+}
+
+div[data-testid="metric-container"]:hover{
+    transform:translateY(-5px);
+    border:1px solid #06B6D4;
+    box-shadow:0 0 20px rgba(6,182,212,.45);
+}
+
+/* ================= CHART CONTAINER ================= */
+
+div[data-testid="stPlotlyChart"]{
+    background:#1E293B;
+    border-radius:20px;
+    padding:15px;
+    border:1px solid #334155;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+    margin-bottom:20px;
+}
+
+/* ================= PAGE SPACING ================= */
+
+.block-container{
+    max-width:1600px;
+    padding-top:2rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+/* ================= TABLE ================= */
+
+div[data-testid="stDataFrame"]{
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid #334155;
+}

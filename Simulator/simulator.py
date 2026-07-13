@@ -3,6 +3,7 @@ import datetime
 import time
 import csv
 import os
+import subprocess
 
 # -------------------------------
 # Sensor List
@@ -129,6 +130,11 @@ while True:
         ])
 
         file.flush()
+    print("Running ETL...")
+    subprocess.run(["python", "../etl/etl.py"])
+
+    print("Uploading to Snowflake...")
+    subprocess.run(["python", "../load_to_snowflake.py"])
 
     print("\nWaiting 10 seconds for next batch...\n")
     time.sleep(10)

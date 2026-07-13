@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import snowflake.connector
 from snowflake.connector.pandas_tools import write_pandas
@@ -17,7 +18,11 @@ print("Connected Successfully!")
 
 
 # CSV load
-df = pd.read_csv("etl/clean_iot_data.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+csv_path = os.path.join(BASE_DIR, "etl", "clean_iot_data.csv")
+
+df = pd.read_csv(csv_path).tail(10)
 
 df.columns = df.columns.str.upper()
 
