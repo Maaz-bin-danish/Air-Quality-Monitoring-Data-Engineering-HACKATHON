@@ -8,9 +8,9 @@
 # -----------------------------
 
 SNOWFLAKE_CONFIG = {
-    "user": "MAAZDANISH",
-    "password": "@Decentmaaz123",
-    "account": "ppylmpv-fq49504",
+    "user": "  ",
+    "password": "  ",
+    "account": "  ",
     "warehouse": "AIR_QUALITY_WH",
     "database": "AIR_QUALITY_DB",
     "schema": "PUBLIC"

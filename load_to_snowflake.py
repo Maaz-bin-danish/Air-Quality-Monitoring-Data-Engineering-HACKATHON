@@ -6,9 +6,9 @@ from snowflake.connector.pandas_tools import write_pandas
 
 # Snowflake connection
 conn = snowflake.connector.connect(
-    user="MAAZDANISH",
-    password="@Decentmaaz123",
-    account="ppylmpv-fq49504",
+    user=" ",
+    password=" ",
+    account=" ",
     warehouse="AIR_QUALITY_WH",
     database="AIR_QUALITY_DB",
     schema="PUBLIC"
